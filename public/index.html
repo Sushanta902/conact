@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conact</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="l-d" onclick="myFunction()"><i style="background: transparent;" class="fa fa-circle-half-stroke"></i></div>
+
+    <form id="form" action="">
+
+        <div class="container">
+            <div class="heading">
+                <a href="https://www.facebook.com/sushanta.neupane.5/" target="_blank" ><img src="/logo.png"  style="width:90px;border-radius: 50%;"></a><section style="font-family: 'Stylish';font-size: 2rem;">Conact😶‍🌫️</section> 
+                <section id="active_session"></section>
+            </div>
+            <div class="msg-section" id="msg-section">
+                   <ul id="msg">
+                    <li class="alertmsg"></li>
+                   </ul>
+
+            </div>
+            <div class="sending-tool">
+                <input type="text" autocomplete="off" placeholder="Type..." id="input">
+                <button type="submit"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+    </form>
+
+<br>
+<center>
+    <a href="https://www.facebook.com/sushanta.neupane.5/" target="_blank" style="font-family: 'Stylish';color:white;letter-spacing: 2px;text-decoration: none;padding-left: 20px;">Credits</a>
+</center>
+
+
+<div style="display: none;"class="sounds">
+    <audio id="a1">
+        <source src="join.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a2">
+        <source src="leave.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a3">
+        <source src="msg.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a4">
+        <source src="typing.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="/client.js"></script>
+</body>
+</html>
